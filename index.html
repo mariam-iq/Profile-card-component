@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>      
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Profile card component</title>
+
+  <style>
+    :root {
+      font-size: 18px;}
+
+    * {
+      margin: 0;
+      padding: 0;}
+
+    body {
+      background: hsl(185, 75%, 39%);
+      font-family: 'kubh sans', sans-serif;
+      display: flex;
+      overflow: hidden;
+      justify-content: center;
+      align-items: center;}
+
+    .background{
+      position: absolute;
+      z-index: -1;}
+
+    
+    .background .img1 {
+      top: -300px;
+      left: -175px;}
+
+    .background .img2 {
+      bottom: -300px;
+      right: -175px;}
+
+    #profile-card {
+      width: 350px;
+      margin-top: 10%;
+      background: white;
+      border-radius: 4%;
+      overflow: hidden;
+      text-align: center;}
+
+    #background-top-card {
+      height: 150px;}
+
+    .card-body {
+      padding: 0 20px 30px;}
+
+    .victor-photo {
+      border-radius: 50%;
+      overflow: hidden;
+      width: 95px;
+      margin: -53px auto 6px auto;}
+
+    .victor-photo img {
+      display: block;}
+
+    #victor-name {
+      font-size: 20px;
+      font-weight: bolder;}
+
+    #victor-age {
+      font-size: 20px;
+      font-weight: 400;
+      color: hsl(0, 11%, 12%);
+      opacity: 0.5;}
+
+    #victor-city {
+      font-weight: 400;
+      color: hsl(0, 11%, 12%);
+      opacity: 0.5;
+      font-size: 17px;}
+
+    #hr {
+      opacity: 30%;
+      margin-top: 18%;}
+
+    .footer {
+      margin-top:4% ;}
+
+    .numbers {
+      margin-left: 12%;
+      margin-right: 12%;
+      font-weight: bolder;}
+
+    .num1 {
+      margin-right: 11%;
+      float: left;}
+
+    .num2 {
+      margin-right: 10%;}
+
+    .num3 {
+      float: right;}
+
+    .details {
+      margin-bottom: 5%;
+      font-size: 14px;
+      opacity: 0.5;}
+
+    .d1 {
+      float: left;
+      margin-left: 7%;}
+
+    .d2 {
+      margin-left: -3%;}
+
+    .d3 {
+      float: right;
+      margin-right: 10%;}
+
+    .attribution {
+      font-size: small; 
+      position: absolute;
+      bottom: 0;}
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);}
+  </style>
+
+</head>
+<body>
+
+  <div class="background">
+    <img src="bg-pattern-top.svg" alt="" class="img1">
+    <img src="bg-pattern-bottom.svg" alt="" class="img2">
+  </div>
+
+  <div id="profile-card">
+
+    <img src="images\bg-pattern-card.svg" id="background-top-card">
+
+    <div class="card-body">
+      <div class="victor-photo">
+        <img src="images//image-victor.jpg" alt="">
+      </div>
+
+
+      <span id="victor-name">Victor Crest</span>
+      <span id="victor-age">26</span>
+      <br>
+      <span id="victor-city">London</span>
+    </div>
+
+
+    <hr id="hr">
+      <div class="footer">
+        <div class="numbers">
+          <span class="num1">80K </span>
+          <span class="num2">803K</span>
+          <span class="num3">1.4K</span>
+        </div>
+  
+        <div class="details">
+          <span class="d1">Followers</span>
+          <span class="d2">Likes</span>
+          <span class="d3">Photos</span>
+        </div>
+      </div>
+     
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">mariam.iq</a>.
+  </div>
+
+</body>
+</html>
